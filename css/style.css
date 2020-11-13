@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;600;700&display=swap");
+
+:root {
+  --red: #f54745;
+  --grey: #c7c7c7;
+  --white: #f5f5f5;
+  --linear-gradient: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: var(--grey);
+}
+
+.special_heading {
+  font-family: "Lobster", cursive;
+}
+
+.heading {
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.fw_600 {
+  font-weight: 600;
+}
+
+header,
+#section_one,
+#section_two,
+#section_three,
+#section_four {
+  height: 700px;
+}
+
+.parallax_effect {
+  background-color: var(--linear-gradient);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  background-image: url("../img/wheat.jpg");
+}
+
+nav i {
+  background-color: #000;
+  opacity: 0.1;
+  border-radius: 50%;
+}
+
+nav p {
+  font-size: 20px;
+}
+
+nav .dropdown-menu {
+  margin-right: 55px;
+}
+
+#section_one {
+  background-image: url("../img/backpack.jpg");
+}
+
+#section_two {
+  background-image: url("../img/roadtrip.jpg");
+}
+
+#section_three {
+  background-image: url("../img/airplane.jpg");
+}
+
+#section_four {
+  background-image: url("../img/compass.jpg");
+}
+
+.background_tint {
+  opacity: 0.8;
+  background-color: #000;
+  padding: 3rem 2rem;
+}
+
+i {
+    color: #fff;
+    background-color: rgba(199, 199, 199, 0.3);
+    padding: 1rem;
+    border-radius: 20%;
+}
+
+@media (max-width: 500px) {
+  .background_tint {
+    padding: 1rem;
+    color: red;
+  }
+}
